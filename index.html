@@ -145,7 +145,7 @@
               <input type="text" placeholder="Search...">
             </div>
             <script>
-    // Initialize the Autocomplete object
+      // Initialize the Autocomplete object
              var autocomplete = new google.maps.places.Autocomplete(
              document.getElementById('search-box').getElementsByTagName('input')[0]
               );
@@ -213,18 +213,21 @@
         
       </div>
       <div id="title">GOOGLE-STREET-VIEW</div>
+      
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFCqSlD9Oc1TgnslsOtrmY7opuFx7Q2q8"></script>
+    <div id="pano">
       <script>
         // Get the current position of the user
         navigator.geolocation.getCurrentPosition(function (position) {
           // Create a new map centered at the user's location
-          var map = new google.maps.Map(document.getElementById('map'), {
-            center: { lat: position.coords.latitude, lng: position.coords.longitude },
-            zoom: 14
-          });
+        var map = new google.maps.Map(document.getElementById('map'), {
+        center: { lat: position.coords.latitude, lng: position.coords.longitude },
+        zoom: 14
+        });
       
           // Add a marker at the user's location
-          var marker = new google.maps.Marker({
-            position: { lat: position.coords.latitude, lng: position.coords.longitude },
+        var marker = new google.maps.Marker({
+        position: { lat: position.coords.latitude, lng: position.coords.longitude },
             map: map,
             title: 'Your Location'
           });
@@ -232,8 +235,6 @@
       </script>
 
 
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFCqSlD9Oc1TgnslsOtrmY7opuFx7Q2q8"></script>
-    <div id="pano">
       <script>
         // Get the current position of the user
         navigator.geolocation.getCurrentPosition(function (position) {
@@ -253,8 +254,8 @@
   <div class="container col-10 col-xxl-8 px-4 py-5">
     <div class="row align-items-center g-lg-5 py-5">
       <div class="col-lg-7 text-center text-lg-start">
-        <h1 class="display-4 fw-bold lh-1 mb-3 text-white">Vertically centered hero sign-up form</h1>
-        <p class="col-lg-10 fs-4 text-white">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+        <h1 class="display-4 fw-bold lh-1 mb-3 text-white">Object Detection using Tensor-Flow</h1>
+        <p class="col-lg-10 fs-4 text-white">Yolo -V5 with graphical user interface</p>
       </div>
       <div class="col-md-10 mx-auto col-lg-5">
         <form class="p-4 p-md-5 border rounded-3 bg-light">
@@ -284,8 +285,8 @@
   <div class="container my-5">
     <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
       <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-        <h1 class="display-4 fw-bold lh-1 text-white">Border hero with cropped image and shadows</h1>
-        <p class="lead text-white">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+        <h1 class="display-4 fw-bold lh-1 text-white">Planetary Society Space Advocacy </h1>
+        <p class="lead text-white">Planetary society member for 6 years, including a trip to Washington D.C to talk to congressional representatives and Senators about Funding Space Programs</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
           <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold text-white">Primary</button>
           <button type="button" class="btn btn-outline-secondary btn-lg px-4 text-color text-white">Default</button>
@@ -301,9 +302,9 @@
 
   <div class="bg-dark text-secondary px-4 py-5 text-center">
     <div class="py-5">
-      <h1 class="display-5 fw-bold text-white">Dark mode hero</h1>
+      <h1 class="display-5 fw-bold text-white">Auto-mechanic for 17+ years </h1>
       <div class="col-lg-6 mx-auto">
-        <p class="fs-5 mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+        <p class="fs-5 mb-4">Personal Vehicle projects include object detection of vehicles and holographic heads up display</p>
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
           <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Custom button</button>
           <button type="button" class="btn btn-outline-light btn-lg px-4">Secondary</button>
@@ -321,3 +322,4 @@
       
   </body>
 </html>
+  
